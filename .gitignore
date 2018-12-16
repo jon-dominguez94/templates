@@ -11,6 +11,8 @@ bundle.map.js
 
 config/master.key
 
+storage/
+
 ### OSX ###
 
 .DS_Store
