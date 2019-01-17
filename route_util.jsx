@@ -33,8 +33,6 @@ export const AuthRoute = withRouter(connect(mapStateToProps)(Auth));
 // connect Protected to the redux state
 export const ProtectedRoute = withRouter(connect(mapStateToProps)(Protected));
 
-
-
 // ****************
 // When importing and using in another file
 
