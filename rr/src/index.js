@@ -7,5 +7,8 @@ import './index.css';
 document.addEventListener("DOMContentLoaded", () => {
   const store = configureStore();
 
+  window.getState = store.getState;
+  window.dispatch = store.dispatch;
+
   ReactDOM.render(<Root store={store} />, document.getElementById('root'));
 });
