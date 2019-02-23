@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import TodoForm from './todo_form';
+import { createTodo } from '../actions/counter_actions';
 
 const mstp = state => {
   return ({
@@ -9,7 +10,7 @@ const mstp = state => {
 
 const mdtp = dispatch => {
   return ({
-
+    createTodo: todo => dispatch(createTodo(todo))
   });
 };
 
