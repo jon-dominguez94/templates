@@ -1,7 +1,8 @@
 import React from 'react';
+import TodoFormContainer from './todo_form_container';
 
 const App = () => (
-  <div></div>
+  <TodoFormContainer />
 );
 
 export default App;

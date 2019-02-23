@@ -10,11 +10,13 @@ class TodoForm extends React.Component {
   }
 
   render() {
-    <div>
-      <form>
-        <input type="text" placeholder="body"/>
-      </form>
-    </div>
+    return(
+      <div>
+        <form>
+          <input type="text" placeholder="body"/>
+        </form>
+      </div>
+    );
   }
 }
 
