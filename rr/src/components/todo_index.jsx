@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodoIndex = props => {
   const todos = props.todos.map(todo => (
-    <div>
+    <div key={todo.id}>
       <p>{todo.body}</p>
       <p>{todo.completed}</p>
     </div>
