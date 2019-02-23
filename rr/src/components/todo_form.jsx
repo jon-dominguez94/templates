@@ -14,6 +14,7 @@ class TodoForm extends React.Component {
       <div>
         <form>
           <input type="text" placeholder="body"/>
+          <button>Create Todo</button>
         </form>
       </div>
     );
