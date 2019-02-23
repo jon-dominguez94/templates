@@ -9,11 +9,19 @@ class TodoForm extends React.Component {
     };
   }
 
-  render() {
+  update(field){
+    return e => {
+      this.setState({
+        [field]: e.target.value
+      });
+    };
+  }
+
+  render(){
     return(
       <div>
         <form>
-          <input type="text" placeholder="body"/>
+          <input type="text" value={this.state.body} placeholder="body" onChange={ () => this.update('body') }/>
           <button>Create Todo</button>
         </form>
       </div>
