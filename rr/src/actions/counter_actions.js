@@ -1,3 +1,5 @@
+import * as APIUtil from '../util/api_util';
+
 export const RECEIVE_TODO = "RECEIVE_TODO";
 
 const receiveTodo = todo => {
@@ -7,3 +9,7 @@ const receiveTodo = todo => {
   });
 };
 
+export const createTodo = todo => dispatch => {
+  const newTodo = APIUtil.createTodo(todo);
+  dispatch(receiveTodo(newTodo));
+};

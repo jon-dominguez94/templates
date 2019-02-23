@@ -5,7 +5,8 @@ class TodoForm extends React.Component {
     super(props);
 
     this.state = {
-      body: ''
+      body: '',
+      id: this.props.length
     };
 
     this.update = this.update.bind(this);
