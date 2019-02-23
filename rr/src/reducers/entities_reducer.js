@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import counters from './counter_reducer';
+import todos from './todos_reducer';
 
 const entitiesReducer = combineReducers({
-  counters
+  todos
 });
 
 export default entitiesReducer;
