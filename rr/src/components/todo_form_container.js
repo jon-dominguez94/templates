@@ -3,7 +3,7 @@ import TodoForm from './todo_form';
 
 const mstp = state => {
   return ({
-
+    length: Object.values(state.entities.counters).length
   });
 };
 
