@@ -13,6 +13,15 @@ class TodoForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+
+  componentDidUpdate(prevProps){
+    if(prevProps.length !== this.props.length){
+      this.setState({
+        id: this.props.length
+      });
+    }
+  }
+
   update(field){
     return e => (
       this.setState({
