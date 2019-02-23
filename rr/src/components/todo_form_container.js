@@ -4,7 +4,7 @@ import { createTodo } from '../actions/counter_actions';
 
 const mstp = state => {
   return ({
-    length: Object.values(state.entities.counters).length
+    length: Object.values(state.entities.todos).length
   });
 };
 
