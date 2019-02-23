@@ -1,5 +1,5 @@
-const countersReducer = (state, action) => {
+const todosReducer = (state, action) => {
   return {};
 };
 
-export default countersReducer;
+export default todosReducer;

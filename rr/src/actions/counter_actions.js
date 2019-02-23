@@ -16,5 +16,4 @@ export const createTodo = todo => dispatch => {
   } catch(err) {
     console.log(err);
   }
-
 };

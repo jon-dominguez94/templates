@@ -1,6 +1,6 @@
 export const createTodo = todo => {
   if(todo.body === ''){
-    throw { message: "Body must not be empty" };
+    throw "Body must not be empty";
   }
   return {
     id: todo.id,
