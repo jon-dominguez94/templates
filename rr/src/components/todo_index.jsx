@@ -1,13 +1,17 @@
 import React from 'react';
 
 const TodoIndex = props => {
-  const todos = props.todos.map(todo => {
-    <p>{todo.body}</p>
-    <p>{todo.completed}</p>
-  })
+  const todos = props.todos.map(todo => (
+    <div>
+      <p>{todo.body}</p>
+      <p>{todo.completed}</p>
+    </div>
+  ));
 
   return (
-    {todos}
+    <div>
+      {todos}
+    </div>
   );
 }
 
