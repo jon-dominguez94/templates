@@ -10,6 +10,7 @@ class TodoForm extends React.Component {
     };
 
     this.update = this.update.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   update(field){
