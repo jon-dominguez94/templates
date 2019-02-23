@@ -10,6 +10,11 @@ const receiveTodo = todo => {
 };
 
 export const createTodo = todo => dispatch => {
-  const newTodo = APIUtil.createTodo(todo);
-  dispatch(receiveTodo(newTodo));
+  try {
+    const newTodo = APIUtil.createTodo(todo);
+    dispatch(receiveTodo(newTodo));
+  } catch(err) {
+    console.log(err);
+  }
+
 };

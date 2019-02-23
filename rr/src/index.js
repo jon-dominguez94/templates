@@ -4,6 +4,9 @@ import configureStore from './store/store';
 import Root from './components/root';
 import './index.css';
 
+import * as API from './util/api_util';
+window.createTodo = API.createTodo;
+
 document.addEventListener("DOMContentLoaded", () => {
   const store = configureStore();
 
