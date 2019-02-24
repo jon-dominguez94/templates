@@ -1,9 +1,9 @@
 import React from 'react';
-import TodoIndexItem from './todo_index_item';
+import TodoIndexItemContainer from './todo_index_item_container';
 
 const TodoIndex = props => {
   const todos = props.todos.map(todo => (
-    <TodoIndexItem key={todo.id} todo={todo}/>
+    <TodoIndexItemContainer key={todo.id} todo={todo}/>
   ));
 
   return (

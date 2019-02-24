@@ -3,7 +3,7 @@ import React from 'react';
 const TodoIndexItem = props => {
 
   function toggleComplete(){
-    
+    props.updateTodo(props.todo);
   }
 
   return (
