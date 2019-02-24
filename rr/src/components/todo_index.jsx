@@ -3,7 +3,7 @@ import TodoIndexItem from './todo_index_item';
 
 const TodoIndex = props => {
   const todos = props.todos.map(todo => (
-    <TodoIndexItem key={todo.id} />
+    <TodoIndexItem key={todo.id} todo={todo}/>
   ));
 
   return (
