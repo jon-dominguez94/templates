@@ -6,6 +6,7 @@ import './index.css';
 
 import * as API from './util/api_util';
 window.createTodo = API.createTodo;
+window.updateTodo = API.updateTodo;
 
 document.addEventListener("DOMContentLoaded", () => {
   const store = configureStore();
