@@ -17,3 +17,7 @@ export const createTodo = todo => dispatch => {
     console.log(err);
   }
 };
+
+export const updateTodo = todo => dispatch => {
+  dispatch(receiveTodo(APIUtil.updateTodo(todo)));
+};
