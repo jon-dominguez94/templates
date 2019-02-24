@@ -1,11 +1,9 @@
 import React from 'react';
+import TodoIndexItem from './todo_index_item';
 
 const TodoIndex = props => {
   const todos = props.todos.map(todo => (
-    <div key={todo.id}>
-      <p>{todo.body}</p>
-      <p>{todo.completed ? "completed" : "incomplete"}</p>
-    </div>
+    <TodoIndexItem key={todo.id} />
   ));
 
   return (

@@ -9,3 +9,5 @@ const TodoIndexItem = props => {
     </div>
   );
 }
+
+export default TodoIndexItem;
