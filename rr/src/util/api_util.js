@@ -10,6 +10,6 @@ export const createTodo = todo => {
 };
 
 export const updateTodo = todo => {
-  todo.completed = todo.completed ? = false : true;
+  todo.completed = todo.completed ? false : true;
   return todo;
 };
