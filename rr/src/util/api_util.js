@@ -8,8 +8,3 @@ export const createTodo = todo => {
     completed: false,
   };
 };
-
-export const updateTodo = todo => {
-  todo.completed = todo.completed ? false : true;
-  return todo;
-};
