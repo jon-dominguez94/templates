@@ -1,23 +1,19 @@
 import * as APIUtil from '../util/api_util';
 
-export const RECEIVE_TODO = "RECEIVE_TODO";
+export const RECEIVE_SAMPLE = "RECEIVE_SAMPLE";
 
-const receiveTodo = todo => {
+const receiveSample = sample => {
   return ({
-    type: RECEIVE_TODO,
-    todo
+    type: RECEIVE_SAMPLE,
+    sample
   });
 };
 
-export const createTodo = todo => dispatch => {
+export const createSample = sample => dispatch => {
   try {
-    const newTodo = APIUtil.createTodo(todo);
-    dispatch(receiveTodo(newTodo));
+    const newSample = APIUtil.createsample(sample);
+    dispatch(receiveSample(newSample));
   } catch(err) {
     console.log(err);
   }
-};
-
-export const updateTodo = todo => dispatch => {
-  dispatch(receiveTodo(APIUtil.updateTodo(todo)));
 };
