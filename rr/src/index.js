@@ -4,7 +4,8 @@ import configureStore from './store/store';
 import Root from './components/root';
 import './index.css';
 
-import * as API from './util/api_util';
+import * as API from './actions/sample_actions';
+window.updateTodo = API.updateTodo;
 
 
 document.addEventListener("DOMContentLoaded", () => {
