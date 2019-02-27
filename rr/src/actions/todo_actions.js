@@ -11,7 +11,7 @@ const receiveSample = sample => {
 
 export const createSample = sample => dispatch => {
   try {
-    const newSample = APIUtil.createsample(sample);
+    const newSample = APIUtil.createSample(sample);
     dispatch(receiveSample(newSample));
   } catch(err) {
     console.log(err);
